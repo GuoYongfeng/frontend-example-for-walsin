@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import yonyouLogoImg from '../assets/imgs/yonyou.jpg'
+import yonyouLogoImg from 'assets/imgs/yonyou.jpg'
 
 export default class Banner extends Component {
     constructor(props){

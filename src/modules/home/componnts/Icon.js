@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../assets/iconfont/iconfont.css'
+import 'assets/iconfont/iconfont.css'
 
 export default class Icon extends Component {
     constructor(props){

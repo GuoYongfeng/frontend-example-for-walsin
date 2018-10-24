@@ -9,7 +9,7 @@
 - npm v6.0.0及以上
 - babel V7
 
-## 内容大纲
+## 项目搭建
 
 - 第①节 概述和原理
 - 第②节 体验和安装：node npm git markdown webpack webpack-cli
@@ -21,6 +21,10 @@
 - 第⑧节 HMR热更新的哪些事
 - 第⑨节 优化资源
 - 第⑩节 提升构建效率
-- 第11节 内部原理探索
-- 第12节 如何开发 loader
-- 第13节 如何开发 plugin
+
+## 基础知识
+
+- ES6/7/8
+- React Fundamental
+- HTTP：axios
+- Mirrorx & Router & State Management

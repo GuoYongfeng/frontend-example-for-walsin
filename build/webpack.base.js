@@ -13,6 +13,12 @@ module.exports = env => {
             path: path.resolve(__dirname, '../dist'),
             filename: env ? "[name].[hash:5].js" : "[name].js"
         },
+        resolve: {
+            alias: {
+              assets: path.resolve(__dirname, '../src/assets'),
+              components: path.resolve(__dirname, '../src/components')
+            }
+        },
         externals: {
             react: 'React',
             "react-dom": "ReactDOM"

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Icon from '../componnts/Icon'
-import Banner from '../componnts/Banner'
-import Corp from '../componnts/Corp'
+import Icon from './componnts/Icon'
+import Banner from './componnts/Banner'
+import Corp from './componnts/Corp'
 
 const App = () => (
     <div className="app"> 

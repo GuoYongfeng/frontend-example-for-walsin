@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './containers/App'
+import App from './modules/home/App'
 
 // import '@babel/polyfill' 配置了babel，polyfill会自动引入
 import './index.less'
