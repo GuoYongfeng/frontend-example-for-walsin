@@ -1,16 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './modules/home/App'
-
-// import '@babel/polyfill' 配置了babel，polyfill会自动引入
-import './index.less'
+import mirror, { render } from 'mirrorx';
+import logger from "redux-logger";
+import App from './layouts/App.js';
 
 console.log(PRODUCTION);
 console.log(GLOBAL_HTTP_CTX);
 
-let root = document.getElementById('app')
+mirror.defaults({
+    historyMode: "hash",
+    middlewares: [logger]
+});
 
-ReactDOM.render(<App />, root)
+let root = document.getElementById('app');
+render(<App />, root);
 
 if (module.hot) {
     module.hot.accept();

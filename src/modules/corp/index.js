@@ -5,7 +5,7 @@ export default class Corp extends Component {
     constructor(props){
         super(props)
         this.state = {
-            info: []
+            info: {}
         }
     }
     componentWillMount(){
@@ -14,18 +14,21 @@ export default class Corp extends Component {
     getCorpData(){
         axios.get('/mes/info')
             .then((res) => {
+                let { code, data, msg } = res.data;
+
                 this.setState({
-                    info: res.data.data
+                    info: data
                 })
             })
     }
     render() {
         let { name, regLocation} = this.state.info;
-
+      
         return (
             <div style={{width: "100%"}} className="banner">
                 <h3>{name}</h3>
                 <p>公司地点：{regLocation}</p>
+                
             </div>
         )
     }

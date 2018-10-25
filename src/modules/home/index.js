@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import yonyouLogoImg from 'assets/imgs/yonyou.jpg'
 
-export default class Banner extends Component {
+export default class Home extends Component {
     constructor(props){
         super(props)
     }

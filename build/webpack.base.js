@@ -16,7 +16,8 @@ module.exports = env => {
         resolve: {
             alias: {
               assets: path.resolve(__dirname, '../src/assets'),
-              components: path.resolve(__dirname, '../src/components')
+              components: path.resolve(__dirname, '../src/components'),
+              utils: path.resolve(__dirname, '../src/utils')
             }
         },
         // externals: {
@@ -53,6 +54,8 @@ module.exports = env => {
                         loader: "url-loader",
                         options: {
                             limit: 1024 * 8
+                            // 小于8k的文件，base64，打包在js文件中
+                            // 大于8k，正常，独立文件
                         }
                     }
                 },
