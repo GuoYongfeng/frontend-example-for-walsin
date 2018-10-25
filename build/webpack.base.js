@@ -19,10 +19,10 @@ module.exports = env => {
               components: path.resolve(__dirname, '../src/components')
             }
         },
-        externals: {
-            react: 'React',
-            "react-dom": "ReactDOM"
-        },
+        // externals: {
+        //     react: 'React',
+        //     "react-dom": "ReactDOM"
+        // },
         module: {
             rules: [
                 {
